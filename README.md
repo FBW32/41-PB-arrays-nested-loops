@@ -1,6 +1,6 @@
 # Programming Basics: Nested Loops
 
-# Loops & Nested Loops
+**Loops & Nested Loops**
 
 1. Write a program to compute the sum and product of an array of integers.
 
