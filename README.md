@@ -1,4 +1,4 @@
-# Programming Basics: Nested Loops
+# Programming Basics: Nested Loops (Using Arrays)
 
 **Loops & Nested Loops**
 
