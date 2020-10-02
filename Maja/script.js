@@ -32,9 +32,9 @@ row 1
 let arr = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
 
  function array1(name) {
-     for (let i = 0; i <=name.length; i++) {
+     for (let i = 0; i <name.length; i++) {
          console.log(`row ${i}`);
-         for (let j= 0; j<=name.length; j++) {
+         for (let j= 0; j<name.length; j++) {
         console.log(`${name[j]}`);
          }
      }
@@ -46,42 +46,36 @@ let arr = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 
 // 7,0,7,27
 // 7,4,28,14
 // 3,10,26,7
-// undefined
 // row 1
 // 1,2,1,24
 // 8,11,9,4
 // 7,0,7,27
 // 7,4,28,14
 // 3,10,26,7
-// undefined
 // row 2
 // 1,2,1,24
 // 8,11,9,4
 // 7,0,7,27
 // 7,4,28,14
 // 3,10,26,7
-// undefined
 // row 3
 // 1,2,1,24
 // 8,11,9,4
 // 7,0,7,27
 // 7,4,28,14
 // 3,10,26,7
-// undefined
 // row 4
 // 1,2,1,24
 // 8,11,9,4
 // 7,0,7,27
 // 7,4,28,14
 // 3,10,26,7
-// undefined
 // row 5
 // 1,2,1,24
 // 8,11,9,4
 // 7,0,7,27
 // 7,4,28,14
 // 3,10,26,7
-// undefined
 
 /* 3 .
 Write a program that will output the following using loops: */
@@ -89,32 +83,34 @@ Write a program that will output the following using loops: */
 // 1 1 1 2 2 2 3 3 3 4 4 4
 
 
-let oneoneone = [];
+let z = 0;
 function name(params) {
-  for (let i = 1; i <= 4; i++) {
-    for (let y = 1; y <= 3; y++) {
-        console.log(i);
-        params.push(i);
+    let f = '';
+  for (let i = 0; i < 4; i++) {
+    for (let y = 0; y <= 3; y++) {
+    f += i + ' ';
+        //console.log(i);
+        //params.push(i);
     }
 }  
+return f;
 }
 
-console.log(name(oneoneone)); // 111222333444 
+console.log("firs Loop",name(z)); // firs Loop 0 0 0 0 1 1 1 1 2 2 2 2 3 3 3 3  
 
 // 0 1 2 3 4 0 1 2 3 4 0 1 2 3 4
 
 let y = 0;
-function name(params) {
+function name2(params) {
     let x = '';
 for (let i = 0; i < 3; i++) {
-    for(let y=0; y<=3;y++) {
-        x += y + '  '; 
+    for(let y=0; y<=4;y++) {
+        x += y + ' '; 
         }
-        
     }  
     return x;
 }
-console.log(name(y)); // 0 1 2 3 4 0 1 2 3 4 0 1 2 3 4 
+console.log("second loop",name2(y)); // second loop 0 1 2 3 4 0 1 2 3 4 0 1 2 3 4  
 
 
 
